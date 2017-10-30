@@ -1,0 +1,30 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 01/16/09
+ * Modified: 05/03/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\audio\Water.wav        \epoc32\winscw\c\private\e01ff1c2\Water.wav
+..\audio\Twitter.wav        \epoc32\winscw\c\private\e01ff1c2\Twitter.wav
+..\audio\Wind.wav        \epoc32\winscw\c\private\e01ff1c2\Wind.wav
+..\audio\Chirp.wav        \epoc32\winscw\c\private\e01ff1c2\Chirp.wav
+..\audio\Tweedle.wav        \epoc32\winscw\c\private\e01ff1c2\Tweedle.wav
+..\audio\Breeze.wav        \epoc32\winscw\c\private\e01ff1c2\Breeze.wav
+..\audio\Billow.wav        \epoc32\winscw\c\private\e01ff1c2\Billow.wav
+..\audio\Caw.wav        \epoc32\winscw\c\private\e01ff1c2\Caw.wav
+..\audio\GameOver.wav        \epoc32\winscw\c\private\e01ff1c2\GameOver.wav
+..\audio\Reward.wav        \epoc32\winscw\c\private\e01ff1c2\Reward.wav
+
+..\inc\Te2PSKeys.h        \epoc32\include\Tetris2\Te2PSKeys.h
+
+PRJ_MMPFILES
+gnumakefile Tetris2icons_aif.mk
+Tetris2.mmp
+
+// End of File

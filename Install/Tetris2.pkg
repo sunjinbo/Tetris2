@@ -1,0 +1,62 @@
+; ============================================================================
+;  File: Tetris2.pkg
+;  Created: 05/08/09
+;  Modified: 05/08/09
+;  Author: Sun Jinbo
+;  Copyright (c): Tieto, All rights reserved
+; ============================================================================
+;
+
+;Languages
+&EN
+
+;Header
+#{"Tetris2"}, (0xe01ff1c2), 2, 0, 0
+
+;Supports Series 60 v 3.0
+[0x101F7961], 2, 0, 0, {"Series60ProductID"}
+
+;Localised Vendor name
+%{"Forum Nokia"}
+
+;Unique Vendor name
+:"Forum Nokia"
+
+; -------- files --------
+
+;Entries
+"\epoc32\release\armv5\urel\Tetris2.exe"-"!:\sys\bin\Tetris2.exe"
+"\epoc32\data\Z\Resource\apps\Tetris2_icon.mif"-"!:\resource\apps\Tetris2_icon.mif"
+"\epoc32\data\Z\Resource\apps\Tetris2.rsc"-"!:\resource\apps\Tetris2.rsc"
+"\epoc32\data\Z\Resource\apps\Tetris2.r01"-"!:\resource\apps\Tetris2.r01"
+"\epoc32\data\Z\Resource\apps\Tetris2.r29"-"!:\resource\apps\Tetris2.r29"
+"\epoc32\data\Z\Resource\apps\Tetris2.r31"-"!:\resource\apps\Tetris2.r31"
+"\epoc32\data\Z\Resource\apps\Tetris2.r159"-"!:\resource\apps\Tetris2.r159"
+"\epoc32\data\Z\Resource\apps\Tetris2_loc.rsc"-"!:\resource\apps\Tetris2_loc.rsc"
+"\epoc32\data\Z\private\10003a3f\apps\Tetris2_reg.rsc"-"!:\private\10003a3f\import\apps\Tetris2_reg.rsc"
+
+"\epoc32\release\armv5\urel\Te2Control.dll"-"!:\sys\bin\Te2Control.dll"
+"\epoc32\data\Z\Resource\apps\Te2Control.rsc"-"!:\resource\apps\Te2Control.rsc"
+"\epoc32\data\Z\Resource\apps\Te2Control.r01"-"!:\resource\apps\Te2Control.r01"
+"\epoc32\data\Z\Resource\apps\Te2Control.r29"-"!:\resource\apps\Te2Control.r29"
+"\epoc32\data\Z\Resource\apps\Te2Control.r31"-"!:\resource\apps\Te2Control.r31"
+"\epoc32\data\Z\Resource\apps\Te2Control.r159"-"!:\resource\apps\Te2Control.r159"
+"\epoc32\data\Z\Resource\apps\matrix_svg.mif"-"!:\resource\apps\matrix_svg.mif"
+"\epoc32\data\Z\Resource\apps\background.mif"-"!:\resource\apps\background.mif"
+
+"\epoc32\release\armv5\urel\Te2Common.dll"-"!:\sys\bin\Te2Common.dll"
+"\epoc32\release\armv5\urel\Te2Utils.dll"-"!:\sys\bin\Te2Utils.dll"
+"\epoc32\release\armv5\urel\Te2Engine.dll"-"!:\sys\bin\Te2Engine.dll"
+
+"\epoc32\winscw\c\private\e01ff1c2\Water.wav"-"!:\private\e01ff1c2\Water.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Twitter.wav"-"!:\private\e01ff1c2\Twitter.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Wind.wav"-"!:\private\e01ff1c2\Wind.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Chirp.wav"-"!:\private\e01ff1c2\Chirp.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Tweedle.wav"-"!:\private\e01ff1c2\Tweedle.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Breeze.wav"-"!:\private\e01ff1c2\Breeze.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Billow.wav"-"!:\private\e01ff1c2\Billow.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Caw.wav"-"!:\private\e01ff1c2\Caw.wav"
+"\epoc32\winscw\c\private\e01ff1c2\Reward.wav"-"!:\private\e01ff1c2\Reward.wav"
+"\epoc32\winscw\c\private\e01ff1c2\GameOver.wav"-"!:\private\e01ff1c2\GameOver.wav"
+
+;End of File

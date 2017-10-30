@@ -1,0 +1,29 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 01/18/09
+ * Modified: 01/18/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\Block.h                \epoc32\include\Tetris2\Block.h
+..\inc\Block.inl              \epoc32\include\Tetris2\Block.inl
+..\inc\EngineAction.h         \epoc32\include\Tetris2\EngineAction.h
+..\inc\EngineAction.inl       \epoc32\include\Tetris2\EngineAction.inl
+..\inc\EngineCommon.h         \epoc32\include\Tetris2\EngineCommon.h
+..\inc\EngineObserver.h       \epoc32\include\Tetris2\EngineObserver.h
+..\inc\Te2Engine.h            \epoc32\include\Tetris2\Te2Engine.h
+..\inc\TetriminoObserver.h    \epoc32\include\Tetris2\TetriminoObserver.h
+..\inc\ScorekeeperObserver.h  \epoc32\include\Tetris2\ScorekeeperObserver.h
+
+//#if defined( __WINS__ )
+//#endif // __WINS__
+
+PRJ_MMPFILES
+Te2Engine.mmp
+
+// End of File

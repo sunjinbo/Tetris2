@@ -1,0 +1,40 @@
+/* ====================================================================
+ * File: Te2Utils.mmp
+ * Created: 01/15/09
+ * Modified: 06/16/12
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+
+
+TARGET          Te2Utils.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xe01ff1c8
+
+SOURCEPATH      ..\src
+SOURCE          BmpUtils.cpp
+SOURCE          SvgUtils.cpp
+SOURCE         AudioUtils.cpp
+
+
+USERINCLUDE     ..\inc
+SYSTEMINCLUDE   \epoc32\include
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE   \epoc32\include\middleware
+#endif // __S60_50__
+
+// Symbian 9.1
+LIBRARY         euser.lib
+LIBRARY         gdi.lib
+LIBRARY         fbscli.lib
+LIBRARY         ws32.lib
+LIBRARY         bitgdi.lib
+LIBRARY         cone.lib
+LIBRARY         aknicon.lib
+LIBRARY         MediaClientAudio.lib
+
+
+CAPABILITY NONE
+
+// End of File

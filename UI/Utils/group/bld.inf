@@ -1,0 +1,18 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 01/16/09
+ * Modified: 05/22/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_MMPFILES
+Te2Utils.mmp
+
+PRJ_EXPORTS
+..\inc\BmpUtils.h         \epoc32\include\Tetris2\BmpUtils.h
+..\inc\SvgUtils.h            \epoc32\include\Tetris2\SvgUtils.h
+..\inc\AudioUtils.h            \epoc32\include\Tetris2\AudioUtils.h
+..\inc\AudioUtilsObserver.h          \epoc32\include\Tetris2\AudioUtilsObserver.h
+
+// End of File

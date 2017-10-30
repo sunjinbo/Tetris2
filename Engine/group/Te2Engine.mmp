@@ -1,0 +1,64 @@
+/* ====================================================================
+ * File: Te2Engine.mmp
+ * Created: 01/03/09
+ * Modified: 01/04/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+MACRO RD_TE2_ADVANCE_FUNC
+#define RD_TE2_ADVANCE_FUNC
+
+TARGET          Te2Engine.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xe01ff1ca
+
+SOURCEPATH      ..\src
+SOURCE          Te2Engine.cpp
+SOURCE          Scorekeeper.cpp
+SOURCE          TetriminoFactory.cpp
+SOURCE          TetriminoBase.cpp
+SOURCE          FixedTetrimino.cpp
+SOURCE          NextRemovableTetrimino.cpp
+SOURCE          RemovableTetrimino.cpp
+SOURCE          AnimationTetrimino.cpp
+SOURCE          Matrix.cpp
+SOURCE          MatrixAction.cpp
+SOURCE          EnginePanic.cpp
+SOURCE          RankList.cpp
+SOURCE          Ticks.cpp
+
+#ifdef RD_TE2_ADVANCE_FUNC
+SOURCEPATH      ..\Extras\src
+SOURCE          TetriminoFactoryExt.cpp
+SOURCE          FixedTetriminoExt.cpp
+SOURCE          AnimationTetriminoExt.cpp
+SOURCE          RemovableTetriminoExt.cpp
+SOURCE          NextRemovableTetriminoExt.cpp
+#endif // RD_TE2_ADVANCE_FUNC
+
+USERINCLUDE     ..\inc
+#ifdef RD_TE2_ADVANCE_FUNC
+USERINCLUDE     ..\Extras\inc
+#endif // RD_TE2_ADVANCE_FUNC
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\tetris2
+
+LIBRARY         euser.lib
+LIBRARY         apparc.lib
+LIBRARY         cone.lib
+LIBRARY         eikcore.lib
+LIBRARY         gdi.lib
+LIBRARY         fbscli.lib
+LIBRARY         ws32.lib
+LIBRARY         centralrepository.lib
+LIBRARY         avkon.lib
+LIBRARY         commonengine.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib
+LIBRARY         flogger.lib
+LIBRARY         te2common.lib
+
+CAPABILITY NONE
+
+// End of File

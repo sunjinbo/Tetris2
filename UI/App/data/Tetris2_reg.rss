@@ -1,0 +1,26 @@
+/* ====================================================================
+ * File: Tetris2_Reg.rss
+ * Created: 01/15/09
+ * Modified: 03/28/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+//
+//Tetris2 application's registration resource file
+//
+
+// INCLUDE FILE
+#include <appinfo.rh>
+
+// UID
+UID2 KUidAppRegistrationResourceFile
+UID3 0xe01ff1c2
+
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = "Tetris2";
+    localisable_resource_file = "\\resource\\apps\\Tetris2_loc";
+    }
+
+// End of File

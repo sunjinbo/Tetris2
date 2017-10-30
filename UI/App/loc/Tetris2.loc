@@ -1,0 +1,29 @@
+/* ====================================================================
+ * File: Tetris2.loc
+ * Created: 07/15/10
+ * Modified: 07/22/09
+ * Author: Sun Jinbo
+ * Copyright (c): TietoEnator, All rights reserved
+ * ==================================================================== */
+
+#ifndef TETRIS2_LOC
+#define TETRIS2_LOC
+
+#ifdef LANGUAGE_SC // language code for Engine English
+#include "..\loc\00\Tetris2_00.loc"
+#elif LANGUAGE_01 // language code for UK English.
+#include "..\loc\01\Tetris2_01.loc"
+#elif defined LANGUAGE_29	// language code for Taiwanese Chinese.
+#include "..\loc\29\Tetris2_29.loc"
+#elif defined LANGUAGE_31	// language code for Peoples Republic of China's Chinese.
+#include "..\loc\31\Tetris2_31.loc"
+#elif defined LANGUAGE_159 // language code for English as appropriate for use in the Peoples Republic of China.
+#include "..\loc\159\Tetris2_159.loc"
+#else
+#include "..\loc\00\Tetris2_00.loc"
+#endif
+
+
+#endif // TETRIS2_LOC
+
+// End of file

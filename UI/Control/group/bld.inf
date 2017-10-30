@@ -1,0 +1,26 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 01/16/09
+ * Modified: 03/17/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_MMPFILES
+gnumakefile background.mk
+gnumakefile matrix.mk
+Te2Control.mmp
+
+PRJ_EXPORTS
+..\inc\ModelObserver.h        \epoc32\include\Tetris2\ModelObserver.h
+..\inc\BaseContainer.h        \epoc32\include\Tetris2\BaseContainer.h
+..\inc\MainMenuContainer.h      \epoc32\include\Tetris2\MainMenuContainer.h
+..\inc\HelpContainer.h        \epoc32\include\Tetris2\HelpContainer.h
+..\inc\GameContainer.h        \epoc32\include\Tetris2\GameContainer.h
+..\inc\MatrixObserver.h        \epoc32\include\Tetris2\MatrixObserver.h
+..\inc\RankContainer.h        \epoc32\include\Tetris2\RankContainer.h
+..\inc\LayoutManagerValues.h  \epoc32\include\Tetris2\LayoutManagerValues.h
+..\inc\LayoutManager.h        \epoc32\include\Tetris2\LayoutManager.h
+
+
+// End of File

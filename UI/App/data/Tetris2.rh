@@ -1,0 +1,31 @@
+/* ====================================================================
+ * File: Tetris2.rh
+ * Created: 04/28/09
+ * Modified: 04/28/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef TETRIS2_RH
+#define TETRIS2_RH
+
+// INCLUDES
+#include "Tetris2.hrh"
+
+// RESOURCE STRUCTS
+
+STRUCT TE2_MENU_ARRAY
+    {
+    STRUCT items[];
+    }
+
+STRUCT TE2_MENU_ITEM
+    {
+    LONG command=ETetris2CmdNone;
+    LONG flags=ETetris2CmdEnabled|ETetris2CmdUnselected;
+    LTEXT txt="";
+    }
+
+#endif // TETRIS2_RH
+
+// End of File

@@ -1,0 +1,89 @@
+/* ====================================================================
+ * File: Te2Control.mmp
+ * Created: 01/16/09
+ * Modified: 04/14/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+TARGET          Te2Control.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xe01ff1c6
+
+MACRO RD_TE2_ADVANCE_FUNC
+MACRO RD_TE2_VIBRA_FUNC
+
+#define RD_TE2_ADVANCE_FUNC
+#define RD_TE2_VIBRA_FUNC
+
+SOURCEPATH      ..\src
+SOURCE          BaseContainer.cpp
+SOURCE          MainMenuContainer.cpp
+SOURCE          HelpContainer.cpp
+SOURCE          GameContainer.cpp
+SOURCE          RankContainer.cpp
+SOURCE          LayoutManager.cpp
+SOURCE          MenubarControl.cpp
+SOURCE          BackgroundControl.cpp
+SOURCE          ScrollControl.cpp
+SOURCE          MatrixControl.cpp
+SOURCE          MatrixTaskScheduler.cpp
+SOURCE          MatrixTask.cpp
+SOURCE          ScorekeeperControl.cpp
+SOURCE          LabelControl.cpp
+
+
+SOURCEPATH              ..\data
+START RESOURCE          Te2Control.rss
+HEADER
+TARGETPATH              resource\apps
+#ifdef __S60_32__
+LANG sc 01 29 31 159
+#else
+LANGUAGE_IDS
+#endif
+END
+
+USERINCLUDE     ..\inc
+USERINCLUDE     ..\loc
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE   \epoc32\include\Tetris2
+
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE           \epoc32\include\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\applications
+SYSTEMINCLUDE           \epoc32\include\domain\osextensions
+SYSTEMINCLUDE           \epoc32\include\osextensions
+SYSTEMINCLUDE           \epoc32\include\domain\middleware\loc
+#endif // __S60_50__
+
+// Symbian + NOKIA S60 .lib
+LIBRARY         euser.lib
+LIBRARY         cone.lib
+LIBRARY         fbscli.lib
+LIBRARY         bitgdi.lib
+LIBRARY         gdi.lib
+LIBRARY         avkon.lib
+LIBRARY         eikcore.lib 
+LIBRARY         ws32.lib // RWindow
+LIBRARY         CommonEngine.lib // StringLoader
+LIBRARY         flogger.lib
+LIBRARY         hwrmvibraclient.lib
+LIBRARY         efsrv.lib
+LIBRARY         bafl.lib
+
+#ifdef RD_TE2_VIBRA_FUNC
+LIBRARY         vibractrl.lib
+#endif // RD_TE2_VIBRA_FUNC
+
+//
+// Tetris2 component
+//
+LIBRARY         Te2Common.lib
+LIBRARY         Te2Utils.lib
+LIBRARY         Te2Engine.lib
+
+//CAPABILITY WriteDeviceData
+
+// End of File

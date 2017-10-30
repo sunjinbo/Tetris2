@@ -1,0 +1,20 @@
+EXPORTS
+	_ZN10CTe2Engine11GetRankItemEiR5TTimeRi @ 1 NONAME
+	_ZN10CTe2Engine14HandleCommandLE10TEngineCmd @ 2 NONAME
+	_ZN10CTe2Engine4NewLER15MEngineObserver11TEngineType @ 3 NONAME
+	_ZN10CTe2EngineD0Ev @ 4 NONAME
+	_ZN10CTe2EngineD1Ev @ 5 NONAME
+	_ZN10CTe2EngineD2Ev @ 6 NONAME
+	_ZTI10CTe2Engine @ 7 NONAME ; #<TI>#
+	_ZTI14CTetriminoBase @ 8 NONAME ; #<TI>#
+	_ZTI17CTetriminoFactory @ 9 NONAME ; #<TI>#
+	_ZTI20CTetriminoFactoryExt @ 10 NONAME ; #<TI>#
+	_ZTV10CTe2Engine @ 11 NONAME ; #<VT>#
+	_ZTV14CTetriminoBase @ 12 NONAME ; #<VT>#
+	_ZTV17CTetriminoFactory @ 13 NONAME ; #<VT>#
+	_ZTV20CTetriminoFactoryExt @ 14 NONAME ; #<VT>#
+	_ZTI6CTicks @ 15 NONAME ; #<TI>#
+	_ZTI9CRankList @ 16 NONAME ; #<TI>#
+	_ZTV6CTicks @ 17 NONAME ; #<VT>#
+	_ZTV9CRankList @ 18 NONAME ; #<VT>#
+

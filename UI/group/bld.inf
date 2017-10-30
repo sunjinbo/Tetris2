@@ -1,0 +1,14 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 03/15/09
+ * Modified: 03/15/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_MMPFILES
+#include "..\Utils\group\bld.inf"
+#include "..\Control\group\bld.inf"
+#include "..\App\group\bld.inf"
+
+// End of File

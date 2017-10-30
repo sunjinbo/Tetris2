@@ -1,0 +1,8 @@
+﻿CHARACTER_SET UTF8
+#define qtn_te2_prompt_level "等級"
+#define qtn_te2_prompt_line "行數"
+#define qtn_te2_prompt_score "分數"
+#define qtn_te2_prompt_life "生命"
+#define qtn_te2_prompt_game_over "遊戲結束!"
+#define qtn_te2_rank_title "-前五名-"
+#define qtn_te2_rank_no_local_score "本地沒有任何資料"

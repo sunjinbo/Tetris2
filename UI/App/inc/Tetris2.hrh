@@ -1,0 +1,57 @@
+/* ====================================================================
+ * File: Tetris2.hrh
+ * Created: 01/14/09
+ * Modified: 04/30/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef TETRIS2_HRH
+#define TETRIS2_HRH
+
+// Tetris2 main menu flags ('flags' in TE2_MENU_ITEM resource).
+// -----------------------------------------------------
+#define ETetris2CmdDisabled 0x00000F0F
+#define ETetris2CmdEnabled 0x0000F0F0
+#define ETetris2CmdUnselected 0x0F0F0000
+#define ETetris2CmdSelected 0xF0F00000
+
+// ENUMERATES
+// -----------------------------------------------------
+/** The command id in control pane **/
+enum TTetris2CmdIds
+    {
+    ETetris2CmdNone = 1, // start value must not be 0
+    ETetris2CmdSelect,
+    ETetris2CmdStart,
+    ETetris2CmdNormal,
+    ETetris2CmdAdvanced,
+    ETetris2CmdAudioOn,
+    ETetris2CmdAudioOff,
+    ETetris2CmdRank,
+    ETetris2CmdHelp,
+    ETetris2CmdRestart,
+    ETetris2CmdStop,
+    ETetris2CmdPause,
+    ETetris2CmdResume,
+    ETetris2CmdBack,
+    ETetris2CmdQuit,
+    ETetris2CmdClear
+    };
+
+// for specify the game mode type(Normal/Advanced)
+enum TTe2Mode
+    {
+    ETe2ModeNormal,
+    ETe2ModeAdvanced
+    };
+
+enum TTe2Audio  // for specify the audio type(On/Off)
+    {
+    ETe2AudioOn,
+    ETe2AudioOff
+    };
+
+#endif // TETRIS2_HRH
+
+// End of File

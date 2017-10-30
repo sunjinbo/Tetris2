@@ -1,0 +1,88 @@
+/* ====================================================================
+ * File: Te2Control.rss
+ * Created: 04/27/09
+ * Modified: 04/27/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+//  RESOURCE IDENTIFIER
+NAME T2CT    // 4 letter ID
+
+// INCLUDE FILES
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.hrh>
+#include <avkon.rsg>
+#include <appinfo.rh>
+#include "Te2Control.loc"
+
+//  RESOURCE DEFINITIONS
+RESOURCE RSS_SIGNATURE {}
+
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+// r_tetris2_text_level
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_level 
+    {
+    buf = qtn_te2_prompt_level;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_text_line
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_line 
+    {
+    buf = qtn_te2_prompt_line;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_text_score
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_score 
+    {
+    buf = qtn_te2_prompt_score;
+    }
+
+// ---------------------------------------------------------
+// qtn_te2_prompt_life
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_life 
+    {
+    buf = qtn_te2_prompt_life;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_text_game_over
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_game_over
+    {
+    buf = qtn_te2_prompt_game_over;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_text_rank_title
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_rank_title
+    {
+    buf = qtn_te2_rank_title;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_text_no_local_score
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_text_no_local_score
+    {
+    buf = qtn_te2_rank_no_local_score;
+    }
+
+// End of File

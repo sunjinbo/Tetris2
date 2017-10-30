@@ -1,0 +1,103 @@
+/* ====================================================================
+ * File: Tetris2.mmp
+ * Created: 01/14/09
+ * Modified: 05/10/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+MACRO RD_TE2_ADVANCE_FUNC
+#define RD_TE2_ADVANCE_FUNC
+
+//CAPABILITY WriteDeviceData
+
+TARGET                  Tetris2.exe
+TARGETTYPE              exe
+UID                     0x100039CE 0xe01ff1c2
+
+EPOCSTACKSIZE	        0x10000
+EPOCHEAPSIZE            0x10000 0x2000000
+
+//
+// SOURCE FILES
+//
+SOURCEPATH              ..\src
+SOURCE                  Tetris2.cpp
+SOURCE                  Te2Application.cpp
+SOURCE                  Te2Document.cpp 
+SOURCE                  Te2AppUi.cpp
+SOURCE                  Te2MenuView.cpp
+SOURCE                  Te2HelpView.cpp
+SOURCE                  Te2GameView.cpp
+SOURCE                  Te2State.cpp
+SOURCE                  Te2RankView.cpp
+SOURCE                  Te2AudioHandler.cpp
+SOURCE                  Te2Settings.cpp
+SOURCE                  Te2AudioRegister.cpp
+SOURCE                  Te2AudioTask.cpp
+SOURCE                  Te2AudioScheduler.cpp
+
+//
+// Resources
+//
+SOURCEPATH              ..\data
+START RESOURCE          Tetris2.rss
+HEADER
+TARGETPATH              resource\apps
+#ifdef __S60_32__
+LANG sc 01 29 31 159
+#else
+LANGUAGE_IDS
+#endif
+END
+
+START RESOURCE          Tetris2_reg.rss
+TARGETPATH              \private\10003a3f\apps
+END
+
+START RESOURCE          Tetris2_loc.rss
+TARGETPATH              resource\apps
+END
+
+//
+// Head files
+//
+USERINCLUDE             ..\inc
+USERINCLUDE             ..\loc
+SYSTEMINCLUDE           \epoc32\include
+SYSTEMINCLUDE           \epoc32\include\Tetris2
+
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE           \epoc32\include\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\applications
+SYSTEMINCLUDE           \epoc32\include\domain\osextensions
+SYSTEMINCLUDE           \epoc32\include\osextensions
+SYSTEMINCLUDE           \epoc32\include\domain\middleware\loc
+#endif // __S60_50__
+
+//
+// Symbian + NOKIA Series 60
+//
+LIBRARY                 euser.lib
+LIBRARY                 apparc.lib
+LIBRARY                 cone.lib
+LIBRARY                 eikcore.lib
+LIBRARY                 ws32.lib
+LIBRARY                 eikcoctl.lib // CEikMenuBar
+LIBRARY                 efsrv.lib
+LIBRARY                 msgs.lib
+LIBRARY                 bafl.lib
+LIBRARY                 avkon.lib
+LIBRARY                 flogger.lib
+LIBRARY                 CommonEngine.lib
+LIBRARY                 estor.lib
+
+//
+// Tetris2 components
+//
+LIBRARY                 Te2Utils.lib
+LIBRARY                 Te2Common.lib
+LIBRARY                 Te2Control.lib
+
+// End of File

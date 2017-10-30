@@ -1,0 +1,55 @@
+/* ====================================================================
+ * File: Te2Engine.hrh
+ * Created: 01/04/09
+ * Modified:
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef C_TE2ENGINE_HRH
+#define C_TE2ENGINE_HRH
+
+// Enumeration for specifying
+// Values for different kinds of tetrimino type.
+enum {
+    ETetriminoI = 0,
+    ETetriminoJ,
+    ETetriminoL,
+    ETetriminoO,
+    ETetriminoS,
+    ETetriminoT,
+    ETetriminoZ
+    };
+
+#ifdef RD_TE2_ADVANCE_FUNC
+// Values for different kinds of tetrimino type.
+enum {
+    ETetriminoOO = 0,
+    ETetriminoCC,
+    ETetriminoZZ,
+    ETetriminoSS,
+    ETetriminoKK,
+    ETetriminoTT
+    };
+#endif // RD_TE2_ADVANCE_FUNC
+
+// Values for how many lines would be removed.
+enum {
+    ESingle = 1,
+    EDouble,
+    ETriple,
+    ETetris
+    };
+
+// Values for how much levels we can use in engine.
+enum {
+    ELevel1 = 1,
+    ELevel2,
+    ELevel3,
+    ELevel4,
+    ELevel5
+    };
+
+#endif // C_TE2ENGINE_HRH
+
+// End of File

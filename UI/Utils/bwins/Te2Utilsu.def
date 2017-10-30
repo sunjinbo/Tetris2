@@ -1,0 +1,20 @@
+EXPORTS
+	??1CAudioUtils@@UAE@XZ @ 1 NONAME ; CAudioUtils::~CAudioUtils(void)
+	??1CBmpUtils@@UAE@XZ @ 2 NONAME ; CBmpUtils::~CBmpUtils(void)
+	??1CSvgUtils@@UAE@XZ @ 3 NONAME ; CSvgUtils::~CSvgUtils(void)
+	?Bitmap@CBmpUtils@@UBEPAVCFbsBitmap@@H@Z @ 4 NONAME ; class CFbsBitmap * CBmpUtils::Bitmap(int) const
+	?Bitmap@CSvgUtils@@UBEPAVCFbsBitmap@@H@Z @ 5 NONAME ; class CFbsBitmap * CSvgUtils::Bitmap(int) const
+	?NewL@CAudioUtils@@SAPAV1@XZ @ 6 NONAME ; class CAudioUtils * CAudioUtils::NewL(void)
+	?NewL@CBmpUtils@@SAPAV1@ABVTDesC16@@HH@Z @ 7 NONAME ; class CBmpUtils * CBmpUtils::NewL(class TDesC16 const &, int, int)
+	?NewL@CSvgUtils@@SAPAV1@ABVTDesC16@@HH@Z @ 8 NONAME ; class CSvgUtils * CSvgUtils::NewL(class TDesC16 const &, int, int)
+	?OpenFileL@CAudioUtils@@QAEXABVTDesC16@@H@Z @ 9 NONAME ; void CAudioUtils::OpenFileL(class TDesC16 const &, int)
+	?Play@CAudioUtils@@QAEXXZ @ 10 NONAME ; void CAudioUtils::Play(void)
+	?SetAudioInitObserver@CAudioUtils@@QAEXPAVMAudioInitObserver@@@Z @ 11 NONAME ; void CAudioUtils::SetAudioInitObserver(class MAudioInitObserver *)
+	?SetAudioPlayObserver@CAudioUtils@@QAEXPAVMAudioPlayObserver@@@Z @ 12 NONAME ; void CAudioUtils::SetAudioPlayObserver(class MAudioPlayObserver *)
+	?SetSize@CBmpUtils@@UAEXHVTSize@@@Z @ 13 NONAME ; void CBmpUtils::SetSize(int, class TSize)
+	?SetSize@CSvgUtils@@UAEXHVTSize@@@Z @ 14 NONAME ; void CSvgUtils::SetSize(int, class TSize)
+	?SetSizeAndRotation@CBmpUtils@@UAEXHVTSize@@H@Z @ 15 NONAME ; void CBmpUtils::SetSizeAndRotation(int, class TSize, int)
+	?SetSizeAndRotation@CSvgUtils@@UAEXHVTSize@@H@Z @ 16 NONAME ; void CSvgUtils::SetSizeAndRotation(int, class TSize, int)
+	?Stop@CAudioUtils@@QAEXXZ @ 17 NONAME ; void CAudioUtils::Stop(void)
+	?UniqueId@CAudioUtils@@QBEHXZ @ 18 NONAME ; int CAudioUtils::UniqueId(void) const
+

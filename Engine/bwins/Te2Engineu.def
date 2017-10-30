@@ -1,0 +1,6 @@
+EXPORTS
+	??1CTe2Engine@@UAE@XZ @ 1 NONAME ; CTe2Engine::~CTe2Engine(void)
+	?GetRankItem@CTe2Engine@@QAEHHAAVTTime@@AAH@Z @ 2 NONAME ; int CTe2Engine::GetRankItem(int, class TTime &, int &)
+	?HandleCommandL@CTe2Engine@@QAEHW4TEngineCmd@@@Z @ 3 NONAME ; int CTe2Engine::HandleCommandL(enum TEngineCmd)
+	?NewL@CTe2Engine@@SAPAV1@AAVMEngineObserver@@W4TEngineType@@@Z @ 4 NONAME ; class CTe2Engine * CTe2Engine::NewL(class MEngineObserver &, enum TEngineType)
+

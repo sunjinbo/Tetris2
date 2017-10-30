@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<storageModule buildFromInf="true" buildingTestComps="true" cleanLevel="0" concurrentBuildJobs="4" defaultMMPChangedAction="0" extraSBSv2Args="" infBuildComponents="" infFileLocation="group\bld.inf" macrosFile="" makeEngineToUse="make" manageDependencies="true" moduleId="com.nokia.carbide.cdt.builder.carbideCPPBuilder" overrideMakeEngine="false" overrideWorkspaceSettings="false" promptForMMPChangedAction="true" useConcurrentBuilding="true" useDebugMode="false" useIncrementalBuilder="false" useKeepGoing="false" useMMPMacros="true"/>
+<storageModule moduleId="org.eclipse.cdt.core.settings">
+<cconfiguration id="Emulator Debug (winscw_udeb) [Tube_20.0.071]">
+<storageModule buildSystemId="com.nokia.carbide.cdt.builder.CarbideConfigurationDataProvider" id="Emulator Debug (winscw_udeb) [Tube_20.0.071]" moduleId="org.eclipse.cdt.core.settings" name="Emulator Debug (winscw_udeb) [Tube_20.0.071]">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.cdt.debug.cw.symbian.SymbianE32" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.CarbideMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.SBSv2ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MWLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.RCOMPErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MWCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="com.nokia.carbide.cdt.builder.MakeDefErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="CarbideConfigurationDataProvider">
+<ENV_VAR_DATA_ID/>
+<ARGUMENTS_DATA_ID ABLDFREEZEARGSSTORAGE="-r"/>
+<ROM_BUILDER_DATA_ID ROMBUILDWORKINGDIRECTORYSTORAGE="E:\epoc32\rom\"/>
+<SBSV2_DATA_ID CONFIG_BASE_PLATFORM="WINSCW" CONFIG_TARGET="UDEB" SBSV2_BUILD_ALIAS="winscw_udeb" SBSV2_CONFIG_DISPLAY_STRING="Emulator Debug (winscw_udeb) [Tube_20.0.071]"/>
+</storageModule>
+<storageModule filesCache="E:\Tetris2\UI\App\group\bld.inf;E:\Tetris2\UI\App\group\Tetris2.mmp;" includesCache="E:/Tetris2/UI/App/inc[LOCAL];E:/Tetris2/UI/App/loc[LOCAL];E:/epoc32/include;E:/epoc32/include/tetris2;E:/epoc32/include/middleware;E:/epoc32/include/domain/middleware;E:/epoc32/include/domain/applications;E:/epoc32/include/domain/osextensions;E:/epoc32/include/osextensions;E:/epoc32/include/domain/middleware/loc;E:/epoc32/include/oem;" macrosCache="_UNICODE;__SYMBIAN32__;__SUPPORT_CPP_EXCEPTIONS__;__EXE__;__CW32__;__WINS__;RD_TE2_ADVANCE_FUNC;SBSV2;__WINSCW__;_DEBUG;" moduleId="configDataCache" sourcesCache="/App/data;/App/inc;/App/loc;/App/src;" timestampCache="1292482330439" useMmpMacrosCache="true"/>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+</cconfiguration>
+</storageModule>
+</cproject>

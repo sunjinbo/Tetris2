@@ -1,0 +1,70 @@
+EXPORTS
+	_ZN14CBaseContainer12SetMenuBar1LERK7TDesC16i @ 1 NONAME
+	_ZN14CBaseContainer12SetMenuBar2LERK7TDesC16i @ 2 NONAME
+	_ZN14CBaseContainer6StoreLEv @ 3 NONAME
+	_ZN14CGameContainer4NewLERK5TRectR14MModelObserver @ 4 NONAME
+	_ZN14CGameContainer4StopEv @ 5 NONAME
+	_ZN14CGameContainer5PauseEv @ 6 NONAME
+	_ZN14CGameContainer6ResumeEv @ 7 NONAME
+	_ZN14CGameContainer6StartLE9TModeType @ 8 NONAME
+	_ZN14CGameContainer7RestartEv @ 9 NONAME
+	_ZN14CGameContainer8SetAudioEi @ 10 NONAME
+	_ZN14CGameContainerD0Ev @ 11 NONAME
+	_ZN14CGameContainerD1Ev @ 12 NONAME
+	_ZN14CGameContainerD2Ev @ 13 NONAME
+	_ZN14CHelpContainer12AddTextItemLERK7TDesC16 @ 14 NONAME
+	_ZN14CHelpContainer4NewLERK5TRectR14MModelObserver @ 15 NONAME
+	_ZN14CHelpContainer5StartEv @ 16 NONAME
+	_ZN14CHelpContainerD0Ev @ 17 NONAME
+	_ZN14CHelpContainerD1Ev @ 18 NONAME
+	_ZN14CHelpContainerD2Ev @ 19 NONAME
+	_ZN14CRankContainer10CleanRankLEv @ 20 NONAME
+	_ZN14CRankContainer4NewLERK5TRectR14MModelObserver @ 21 NONAME
+	_ZN14CRankContainerD0Ev @ 22 NONAME
+	_ZN14CRankContainerD1Ev @ 23 NONAME
+	_ZN14CRankContainerD2Ev @ 24 NONAME
+	_ZN18CMainMenuContainer12AddMenuItemLERK7TDesC16ii @ 25 NONAME
+	_ZN18CMainMenuContainer14EnableMenuItemEi @ 26 NONAME
+	_ZN18CMainMenuContainer14RemoveMenuItemEi @ 27 NONAME
+	_ZN18CMainMenuContainer15DisableMenuItemEi @ 28 NONAME
+	_ZN18CMainMenuContainer15SetSelectedItemEi @ 29 NONAME
+	_ZN18CMainMenuContainer4NewLERK5TRectR14MModelObserver @ 30 NONAME
+	_ZN18CMainMenuContainerD0Ev @ 31 NONAME
+	_ZN18CMainMenuContainerD1Ev @ 32 NONAME
+	_ZN18CMainMenuContainerD2Ev @ 33 NONAME
+	_ZTI11CMatrixTask @ 34 NONAME ; #<TI>#
+	_ZTI13CLabelControl @ 35 NONAME ; #<TI>#
+	_ZTI14CBaseContainer @ 36 NONAME ; #<TI>#
+	_ZTI14CGameContainer @ 37 NONAME ; #<TI>#
+	_ZTI14CHelpContainer @ 38 NONAME ; #<TI>#
+	_ZTI14CMatrixControl @ 39 NONAME ; #<TI>#
+	_ZTI14CRankContainer @ 40 NONAME ; #<TI>#
+	_ZTI14CScrollControl @ 41 NONAME ; #<TI>#
+	_ZTI15CMenubarControl @ 42 NONAME ; #<TI>#
+	_ZTI17CTe2LayoutManager @ 43 NONAME ; #<TI>#
+	_ZTI18CBackgroundControl @ 44 NONAME ; #<TI>#
+	_ZTI18CMainMenuContainer @ 45 NONAME ; #<TI>#
+	_ZTI19CScorekeeperControl @ 46 NONAME ; #<TI>#
+	_ZTI20CMatrixTaskScheduler @ 47 NONAME ; #<TI>#
+	_ZTV11CMatrixTask @ 48 NONAME ; #<VT>#
+	_ZTV13CLabelControl @ 49 NONAME ; #<VT>#
+	_ZTV14CBaseContainer @ 50 NONAME ; #<VT>#
+	_ZTV14CGameContainer @ 51 NONAME ; #<VT>#
+	_ZTV14CHelpContainer @ 52 NONAME ; #<VT>#
+	_ZTV14CMatrixControl @ 53 NONAME ; #<VT>#
+	_ZTV14CRankContainer @ 54 NONAME ; #<VT>#
+	_ZTV14CScrollControl @ 55 NONAME ; #<VT>#
+	_ZTV15CMenubarControl @ 56 NONAME ; #<VT>#
+	_ZTV17CTe2LayoutManager @ 57 NONAME ; #<VT>#
+	_ZTV18CBackgroundControl @ 58 NONAME ; #<VT>#
+	_ZTV18CMainMenuContainer @ 59 NONAME ; #<VT>#
+	_ZTV19CScorekeeperControl @ 60 NONAME ; #<VT>#
+	_ZTV20CMatrixTaskScheduler @ 61 NONAME ; #<VT>#
+	_ZN17CTe2LayoutManager10ResolutionEv @ 62 NONAME
+	_ZN17CTe2LayoutManager17ResolutionChangedE12TOrientation @ 63 NONAME
+	_ZN17CTe2LayoutManager4NewLEv @ 64 NONAME
+	_ZN17CTe2LayoutManagerD0Ev @ 65 NONAME
+	_ZN17CTe2LayoutManagerD1Ev @ 66 NONAME
+	_ZN17CTe2LayoutManagerD2Ev @ 67 NONAME
+	_ZNK17CTe2LayoutManager10LayoutRectE13TTe2Component @ 68 NONAME
+

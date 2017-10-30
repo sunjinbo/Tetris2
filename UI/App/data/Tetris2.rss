@@ -1,0 +1,333 @@
+/* ====================================================================
+ * File: Tetris2.rss
+ * Created: 01/15/09
+ * Modified: 04/27/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+NAME HELL
+
+// INLCUDE FILES
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+//#include <avkon.loc>
+#include "Tetris2.hrh"
+#include "Tetris2.rh"
+#include "Tetris2.loc"
+
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE {}
+
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ---------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    }
+
+// ----------------------------------------------------
+//
+//    r_tetris2_menu_view
+//
+// ----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_tetris2_menu_view
+    {
+    }
+
+// ----------------------------------------------------
+//
+//    r_tetris2_help_view
+//
+// ----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_tetris2_help_view
+    {
+    }
+
+// ----------------------------------------------------
+//
+//    r_tetris2_game_view
+//
+// ----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_tetris2_game_view
+    {
+    }
+
+// ----------------------------------------------------
+//
+//    r_tetris2_rank_view
+//
+// ----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_tetris2_rank_view
+    {
+    }
+
+// ---------------------------------------------------------
+//   
+//   r_tetris2_mainmenu
+//
+//   Menu group for main menu view.
+//
+// ---------------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_mainmenu
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            { 
+            command = ETetris2CmdStart;
+            flags = ETetris2CmdEnabled|ETetris2CmdSelected;
+            txt = qtn_te2_mainmenu_start;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdNormal;
+            flags = ETetris2CmdDisabled;
+            txt = qtn_te2_mainmenu_normal;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdAdvanced;
+            txt = qtn_te2_mainmenu_advanced;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdAudioOn;
+            txt = qtn_te2_mainmenu_audio_on;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdAudioOff;
+            flags = ETetris2CmdDisabled;
+            txt = qtn_te2_mainmenu_audio_off;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdRank;
+            txt = qtn_te2_mainmenu_rank;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdHelp;
+            txt = qtn_te2_mainmenu_help;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_tetris2_softkeys_selectquit
+//    
+//----------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_softkeys_selectquit
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            { 
+            command = ETetris2CmdSelect;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_select;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdQuit;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_quit; //text_softkey_quit;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_tetris2_softkeys_pausestop
+//    
+//----------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_softkeys_pausestop
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            { 
+            command = ETetris2CmdPause;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_pause; //text_softkey_pause;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdStop;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_stop; //text_softkey_stop;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_tetris2_softkeys_resumestop
+//    
+//----------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_softkeys_resumestop
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            { 
+            command = ETetris2CmdResume;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_resume;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdStop;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_stop; //text_softkey_stop;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_tetris2_softkeys_restartback
+//    
+//----------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_softkeys_restartback
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            { 
+            command = ETetris2CmdRestart;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_restart;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdBack;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_back; //text_softkey_back;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_tetris2_softkeys_emptyback
+//    
+//----------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_softkeys_emptyback
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            { 
+            command = EAknSoftkeyEmpty;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_empty; //text_softkey_empty;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdBack;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_back; //text_softkey_back;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_tetris2_softkeys_clearback
+//    
+//----------------------------------------------------
+//
+RESOURCE TE2_MENU_ARRAY r_tetris2_softkeys_clearback
+    {
+    items = 
+        {
+        TE2_MENU_ITEM 
+            {
+            command = ETetris2CmdClear;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_clear; //text_softkey_clear;
+            },
+
+        TE2_MENU_ITEM
+            { 
+            command = ETetris2CmdBack;
+            flags = ETetris2CmdEnabled;
+            txt = qtn_te2_menubar_back; //text_softkey_back;
+            }
+        };
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_title_tetris2
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_title_tetris2
+    {
+    buf = qtn_te2_title_tetris2;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_help_contents
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_help_contents
+    {
+    buf = qtn_te2_help_contents;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_help_contents_touch
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_help_contents_touch
+    {
+    buf = qtn_te2_help_contents_touch;
+    }
+
+// ---------------------------------------------------------
+// r_tetris2_help_about
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_tetris2_help_about
+    {
+    buf = qtn_te2_help_about;
+    }
+
+// End of File

@@ -1,0 +1,32 @@
+/* ====================================================================
+ * File: Te2Common.mmp
+ * Created: 07/07/10
+ * Modified: 07/17/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+TARGET          Te2Common.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xe01ff1c4
+
+SOURCEPATH      ..\src
+SOURCE      PropertyListener.cpp
+SOURCE      PropertySubscriber.cpp
+SOURCE      RegistrationTimeout.cpp
+SOURCE      RepositorySubscriber.cpp
+SOURCE      ScreensaverBlocker.cpp
+
+USERINCLUDE     ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+LIBRARY         euser.lib
+LIBRARY         centralrepository.lib
+LIBRARY         efsrv.lib
+LIBRARY         eikcoctl.lib
+LIBRARY         apgrfx.lib
+LIBRARY         flogger.lib bafl.lib // for RFileLogger
+
+CAPABILITY NONE
+
+// End of File

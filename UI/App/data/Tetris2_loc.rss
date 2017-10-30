@@ -1,0 +1,29 @@
+/* ====================================================================
+ * File: Tetris2_loc.rss
+ * Created: 01/15/09
+ * Modified: 05/03/09
+ * Author: Sun Jinbo
+ * Copyright (c): TietoEnator, All rights reserved
+ * ==================================================================== */
+
+// INCLUDE FILES
+#include <appinfo.rh>
+
+//
+// Application information
+//
+RESOURCE LOCALISABLE_APP_INFO
+    {
+    short_caption = "Tetris2";
+    caption_and_icon =
+        {
+        CAPTION_AND_ICON_INFO 
+            {
+            caption = "Tetris2";
+            number_of_icons = 1;
+            icon_file = "\\resource\\apps\\Tetris2_icon.mif";
+            }
+        };
+    }
+
+// End of File

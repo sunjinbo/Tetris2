@@ -1,0 +1,8 @@
+CHARACTER_SET UTF8
+#define qtn_te2_prompt_level "LEVEL"
+#define qtn_te2_prompt_line "LINE"
+#define qtn_te2_prompt_score "SCORE"
+#define qtn_te2_prompt_life "LIFE"
+#define qtn_te2_prompt_game_over "GAME OVER!"
+#define qtn_te2_rank_title "-TOP 5-"
+#define qtn_te2_rank_no_local_score "NO LOCAL HIGH SCORE"

@@ -1,0 +1,22 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 07/07/10
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_MMPFILES
+Te2Common.mmp
+
+PRJ_EXPORTS
+..\inc\Logger.h            \epoc32\include\Tetris2\Logger.h
+..\inc\PropertyListener.h         \epoc32\include\Tetris2\PropertyListener.h
+..\inc\PropertyListenerCallback.h            \epoc32\include\Tetris2\PropertyListenerCallback.h
+..\inc\PropertyObserver.h            \epoc32\include\Tetris2\PropertyObserver.h
+..\inc\PropertySubscriber.h            \epoc32\include\Tetris2\PropertySubscriber.h
+..\inc\RegistrationTimeout.h            \epoc32\include\Tetris2\RegistrationTimeout.h
+..\inc\RepositoryObserver.h            \epoc32\include\Tetris2\RepositoryObserver.h
+..\inc\RepositorySubscriber.h            \epoc32\include\Tetris2\RepositorySubscriber.h
+..\inc\ScreensaverBlocker.h           \epoc32\include\Tetris2\ScreensaverBlocker.h
+
+// End of File

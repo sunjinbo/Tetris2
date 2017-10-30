@@ -1,0 +1,30 @@
+/* ====================================================================
+ * File: Te2Control.loc
+ * Created: 07/15/10
+ * Modified: 07/22/09
+ * Author: Sun Jinbo
+ * Copyright (c): TietoEnator, All rights reserved
+ * ==================================================================== */
+
+#ifndef TE2CONTROL_LOC
+#define TE2CONTROL_LOC
+
+
+#ifdef LANGUAGE_SC // language code for Engine English
+#include "..\loc\00\Te2Control_00.loc"
+#elif LANGUAGE_01 // language code for UK English.
+#include "..\loc\01\Te2Control_01.loc"
+#elif defined LANGUAGE_29	// language code for Taiwanese Chinese.
+#include "..\loc\29\Te2Control_29.loc"
+#elif defined LANGUAGE_31	// language code for Peoples Republic of China's Chinese.
+#include "..\loc\31\Te2Control_31.loc"
+#elif defined LANGUAGE_159 // language code for English as appropriate for use in the Peoples Republic of China.
+#include "..\loc\159\Te2Control_159.loc"
+#else
+#include "..\loc\00\Te2Control_00.loc"
+#endif
+
+
+#endif // TE2CONTROL_LOC
+
+// End of file
